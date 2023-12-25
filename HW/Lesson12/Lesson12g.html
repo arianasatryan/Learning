@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .flexbox{
+                width: 250px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .profile-pic{
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                object-fit: cover;
+            }
+            .name{
+                font-weight: bold;
+            }
+            .category,
+            .popularity{
+                color: gray;
+            }
+            .category{
+                font-size: 14px;
+            }
+            .popularity{
+                font-size: 12px;
+            }
+            .follow{
+                background-color:  rgb(65,147,238);
+                color: white;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .profile-info{
+                padding-left: 10px;
+                flex: 1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <div>
+                <img class="profile-pic" src="example.jpg">
+            </div>
+            <div class="profile-info">
+                <p class="name">oliver</p>
+                <p class="category">the cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div style="align-items: end;">
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <div>
+                <img class="profile-pic" src="example.jpg">
+            </div>
+            <div class="profile-info">
+                <p class="name">Mimi</p>
+                <p class="category">Sleepy cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div>
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+
+        <div class="flexbox">
+            <div>
+                <img class="profile-pic" src="example.jpg">
+            </div>
+            <div class="profile-info">
+                <p class="name">Rex</p>
+                <p class="category">Happy Bulldog</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div>
+                <button class="follow">Follow</button>
+            </div>
+        </div>
+    </body>
+</html>

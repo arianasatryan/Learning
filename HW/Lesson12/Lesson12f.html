@@ -2,9 +2,49 @@
 
 <html>
     <head>
-        
+        <style>
+            div {
+                font-family: Arial;
+            }
+            .header{
+                display: flex;
+                background-color: rgb(120, 82, 178);
+                color: white;
+                align-items: center;
+                justify-content: space-between;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .home{
+                font-weight: bold;
+            }
+            .search-box {
+                flex: 1;
+                border: none;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                margin-left: 100px;
+                margin-right: 100px;
+                height: 30px;
+                border-radius: 15px;
+                padding-left: 20px;
+            }
+            .download{
+                border-color: white;
+                background-color: transparent;
+                color: white;
+                border-width: 2px;
+                border-radius: 3px;
+                padding: 5px 12px 5px 12px;
+            }
+        </style>
     </head>
-    <body>
 
+    <body>
+        <div class="header">
+            <div class="home">Home</div>
+            <input  class="search-box" placeholder="Search">
+            <button class="download">Download</button>
+        </div>
     </body>
 </html>
