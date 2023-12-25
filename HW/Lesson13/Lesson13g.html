@@ -1,13 +1,106 @@
 <!DOCTYPE html>
 
 <!-- Design from Twitter -->
+<!-- Break down the design into horizontal and vertical layouts -->
 <!-- Code the design using nested flexbox (flexbox inside flexbox) -->
 
 <html>
-    <head>
-        
-    </head>
-    <body>
 
-    </body>
+<head>
+    <style>
+        div {
+            font-family: Arial;
+        }
+        .layout {
+            display: flex;
+            width: 400px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            object-fit: cover;
+            margin-right: 13px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .username {
+            color: rgb(111, 111, 111);
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .user {
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .video {
+            display: flex;
+            border-color: rgb(200, 200, 200);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 15px;
+            margin-top: 10px;
+            justify-content: start;
+            align-items: center;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .thumbnail {
+            background-color: rgb(220, 220, 220);
+            width: 100px;
+            height: 100px;
+            margin-right: 7px;
+        }
+
+        .video-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-link {
+            color: rgb(111, 111, 111);
+            flex: 1;
+            margin-bottom: 3px;
+        }
+
+        .video-title {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <div>
+            <img class="profile-pic" src="example.jpg">
+        </div>
+        <div class="content">
+            <div class="user-info">
+                <div class="user">supersimple.dev</div>
+                <div class="username">@SuperSimpleDev</div>
+                <div class="text">What is a backend web development? A complete overview. New video is up!</div>
+                <div class="video">
+                    <div class="thumbnail"></div>
+                    <div class="video-info">
+                        <div class="video-link">youtube.com</div>
+                        <div class="video-title">Backend web development - a complete overview (2021)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
