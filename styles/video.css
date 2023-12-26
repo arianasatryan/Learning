@@ -28,6 +28,7 @@
 
 .thumbnail-row {
     margin-bottom: 12px;
+    position: relative;
 }
 
 .video-author,
@@ -38,4 +39,17 @@
 
 .video-author {
     margin-bottom: 4px;
+}
+
+.video-time{
+    background-color: rgba(1, 1, 1, 0.75);
+    color: white;
+    font-family: Roboto, Arial;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    right: 8px;
+    bottom: 10px;
 }
