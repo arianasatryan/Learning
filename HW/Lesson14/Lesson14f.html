@@ -8,9 +8,72 @@
 
 <html>
     <head>
-        
+        <style>
+            .image-icon {
+            width: 48px;
+            height: 48px;
+            border: none;
+            border-radius: 24px;
+            object-fit: cover;
+            }
+            .conversations-bar{
+                background-color: rgb(32,34,37);
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+                align-items: center;
+                width: 80px;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+            }
+            .channels-bar{
+                background-color: rgb(47,49,54);
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 80px;
+                width: 160px;
+                display: flex;
+                flex-direction: column;
+                padding-left: 18px;
+                padding-right: 18px;
+                padding-top: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(189, 185, 185);
+                font-size: 14px;
+                row-gap: 15px;
+            }
+            .channels-header{
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                text-align: center;
+            }
+            .info{
+                color: rgb(233, 228, 228);
+            }
+        </style>
+
     </head>
     <body>
-
+        <div>
+            <div class="conversations-bar">
+                <img class="image-icon" src="example.jpg">
+                <img class="image-icon" src="example.jpg">
+                <img class="image-icon" src="example.jpg">
+            </div>
+            <div class="channels-bar">
+                <div class="channels-header">
+                    <div class="info">INFO</div>
+                    <div>&plus;</div>
+                </div>
+                <div># new-videos</div>
+                <div># updates</div>
+                <div># faq</div>
+            </div>
+        </div>
     </body>
 </html>
